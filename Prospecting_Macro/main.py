@@ -117,33 +117,33 @@ main_frame.place(relx=1.0, rely=0.0, anchor="ne")
 main_frame.pack_propagate(False)
 
 # # === Macro Control Buttons ===
-# run_button = ctk.CTkButton(
-#     master=main_frame,
-#     width=180,
-#     height=60,
-#     corner_radius=30,
-#     text="Start/Stop",
-#     command=lambda: subprocess.Popen([r"C:\Program Files\AutoHotkey\v2\AutoHotkey.exe", r"C:\Users\Ethan\Documents\MacroDev\Prospecting_Macro\autohotkey\collection_loop.ahk"]),
-#     fg_color="#00942c",
-#     hover_color="#0aa839",
-#     font=("Arial", 24),
-# )
-# run_button.pack(pady=(26, 0))
-# run_button.pack_propagate(False)
+run_button = ctk.CTkButton(
+    master=main_frame,
+    width=180,
+    height=60,
+    corner_radius=30,
+    text="Start/Stop",
+    command=lambda: subprocess.Popen([r"C:\Program Files\AutoHotkey\v2\AutoHotkey.exe", r"C:\Users\Ethan\Documents\MacroDev\Prospecting_Macro\autohotkey\collection_loop.ahk"]),
+    fg_color="#00942c",
+    hover_color="#0aa839",
+    font=("Arial", 24),
+)
+run_button.pack(pady=(26, 0))
+run_button.pack_propagate(False)
 
-# pause_button = ctk.CTkButton(
-#     master=main_frame,
-#     width=180,
-#     height=60,
-#     corner_radius=30,
-#     text="Pause/Play",
-#     # command=lambda: subprocess.Popen(["AutoHotkey.exe", "collection_loop.ahk"]),
-#     fg_color="#686868",
-#     hover_color="#858585",
-#     font=("Arial", 24),
-# )
-# pause_button.pack(pady=(10, 0))
-# pause_button.pack_propagate(False)
+pause_button = ctk.CTkButton(
+    master=main_frame,
+    width=180,
+    height=60,
+    corner_radius=30,
+    text="Pause/Play",
+    # command=lambda: subprocess.Popen(["AutoHotkey.exe", "collection_loop.ahk"]),
+    fg_color="#686868",
+    hover_color="#858585",
+    font=("Arial", 24),
+)
+pause_button.pack(pady=(10, 0))
+pause_button.pack_propagate(False)
 
 # === Tutorial Frame ===
 tutorial_frame = ctk.CTkFrame(
